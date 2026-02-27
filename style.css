@@ -13,6 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  display: grid;
+  place-items: center;
+  height: 200px;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,7 +31,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -77,9 +85,14 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
 }
 
 @media (prefers-color-scheme: light) {
